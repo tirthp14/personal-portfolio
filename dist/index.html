@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/dist/output.css">
+
+</head>
+<body class="font-body text-mainWhite text-[1.8rem] leading-snug font-normal text">
+    <nav class="bg-mainRed flex justify-between fixed top-0 left-0 w-full px-8 z-50">
+        <div>
+            <img src="/img/Logo.png" class="w-40" alt="">
+        </div>
+        <div>
+            <ul class="list-none hidden md:flex mr-8 font-mono">
+                <li class="group">
+                    <a href="#welcome-section" class="block text-xl p-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">&lt;About &#47;&gt;</a>
+                </li>
+                <li>
+                    <a href="#projects" class="block text-xl p-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">&lt;Projects &#47;&gt;</a>
+                </li>
+                <li>
+                    <a href="#contact" class="block text-xl p-5 pr-0 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">&lt;Contact &#47;&gt;</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <ul class="w-full font-medium flex flex-col p-4 border border-gray-200 rounded-lg bg-gray-100 rtl:space-x-reverse">
+                    <li>
+                      <a href="#welcome-section" class="block py-2 px-3 text-white bg-blue-700 rounded" aria-current="page">&lt;About &#47;&gt;</a>
+                    </li>
+                    <li>
+                      <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">&lt;Projects &#47;&gt;</a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100">&lt;Contact &#47;&gt;</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <!-- Hamburger Menu -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none mt-5">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section (Kinda :D) -->
+    
+    <section class="w-full h-screen bg-hero-pattern bg-no-repeat object-cover flex flex-col justify-center items-center">
+        <h1 class="tree font-h1Font font-bold text-center text-5xl" data-value="-2">Hi there! 👋</h1>
+        <h1 class="tree font-h1Font font-bold text-center text-[80px] mt-3" data-value="6">I am <strong>Tirth Patel</strong></h1>
+        <p class="tree text-mainRed italic text-3xl font-extralight mt-3" data-value="-4">a web developer</p>
+        <a href="#contact" class="tree mt-14 bg-purple-500 border-b-4 text-white px-3.5 py-2 rounded-full transition duration-200 ease-in-out hover:bg-purple-700 active:bg-purple-900 focus:outline-none" data-value="5">
+            Contact Me
+        </a>
+    </section>
+
+    <section id="welcome-section" class="bg-mainGray w-full">
+        <div class="grid md:grid-cols-2">
+            <div class="p-8 md:p-20 flex flex-col justify-center">
+                <div class="relative">
+                    <h1
+                    class="delay-75 absolute -top-16 left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+                    About Me
+                </h1>
+                <h1 class="pl-5 md:pl-2 text-5xl font-bold border-l-8 border-mainRed dark:text-white">
+                    Who Am I?
+                    </h1>
+                </div>
+                <div class="text-xl mt-6 md:mt-10 font-mono">
+                    My name is Tirth Patel and I am a 1st year Engineering Student at York University. I am an enthusiastic and detail-oriented web developer with a passion for creating innovative solutions. Experienced in front-end development with a focus on delivering high-quality, user-friendly applications.
+                </div>
+                <div class="mt-10 md:mt-20 border-2 p-5 font-mono">
+                    <h1><span>&#128220;</span> Education</h1>
+                    <p class="text-2xl mt-1.5">Bachelor's Degree in Electrical Engineering</p>
+                    <p class="text-xl mt-4">York University – (January, 2024 - Jan 2028)</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-20 font-mono">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-mono">🛠️ Skills</h1>
+                    <h1 class="text-xs italic hidden md:block">hover for more details* <span class="text-[18px]">👇</span></h1>
+                    <h1 class="text-xs italic block md:hidden">press for more details* <span class="text-[18px]">👇</span></h1>
+                </div>
+                <div class="div-tooltip">
+                    <div class="flex justify-between">
+                        <h1 class="mb-2 mt-4 text-2xl font-mono">HTML & CSS</h1> 
+                        <button title="More Details" class="mt-3 group cursor-pointer outline-none hover:rotate-90 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" class="stroke-red-400 fill-none group-hover:fill-red-800 group-active:stroke-red-200 group-active:fill-red-600 group-active:duration-0 duration-300 location-dot">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                <path d="M8 12H16" stroke-width="1.5"></path>
+                                <path d="M12 16V8" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-3 rounded-full bg-gray-600">
+                        <div class="w-[95%] h-3 rounded-full bg-mainRed html"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1 class="mb-2 mt-4 text-2xl font-mono">JavaScript</h1> 
+                        <button title="More Details" class="mt-3 group cursor-pointer outline-none hover:rotate-90 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" class="stroke-red-400 fill-none group-hover:fill-red-800 group-active:stroke-red-200 group-active:fill-red-600 group-active:duration-0 duration-300 location-dot">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                <path d="M8 12H16" stroke-width="1.5"></path>
+                                <path d="M12 16V8" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-3 rounded-full bg-gray-600">
+                        <div class="w-[88%] h-3 rounded-full bg-mainRed javascript"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1 class="mb-2 mt-4 text-2xl font-mono">Python</h1> 
+                        <button title="More Details" class="mt-3 group cursor-pointer outline-none hover:rotate-90 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" class="stroke-red-400 fill-none group-hover:fill-red-800 group-active:stroke-red-200 group-active:fill-red-600 group-active:duration-0 duration-300 location-dot">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                <path d="M8 12H16" stroke-width="1.5"></path>
+                                <path d="M12 16V8" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-3 rounded-full bg-gray-600">
+                        <div class="w-[70%] h-3 rounded-full bg-mainRed python"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1 class="mb-2 mt-4 text-2xl font-mono">Other Libraries, Frameworks & Technologies</h1> 
+                        <button title="More Details" class="mt-3 group cursor-pointer outline-none hover:rotate-90 duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" class="stroke-red-400 fill-none group-hover:fill-red-800 group-active:stroke-red-200 group-active:fill-red-600 group-active:duration-0 duration-300 location-dot">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke-width="1.5"></path>
+                                <path d="M8 12H16" stroke-width="1.5"></path>
+                                <path d="M12 16V8" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-3 rounded-full bg-gray-600 mb-10 md:mb-0">
+                        <div class="w-[78%] h-3 rounded-full bg-mainRed other"></div>
+                    </div>
+                </div>
+                <div id="tooltip" class="font-mono md:absolute flex items-center justify-center md:w-[465px] h-auto m-5 md:m-0 p-3 md:p-5 text-sm bg-gray-800 shadow-md rounded-2xl pointer-events-none text-white md:opacity-0 z-50 transition duration-200 ease-linear"></div>
+                <div class="mt-8 md:mt-20">
+                    <h1>📜 Certifications</h1>
+                    <h2 class="mt-3.5 text-[27px]">freeCodeCamp:</h2>
+                    <div>
+                        <li class="text-xl mt-1.5">Responsive Web Design <a href="https://www.freecodecamp.org/certification/tirthpatel14/responsive-web-design">🔗</a></li>
+                        <li class="text-xl mt-1">JavaScript Algorithms and Data Structures <a href="https://www.freecodecamp.org/certification/tirthpatel14/javascript-algorithms-and-data-structures">🔗</a></li>
+                        <li class="text-xl mt-1">Front End Development Libraries <a href="https://www.freecodecamp.org/certification/tirthpatel14/front-end-development-libraries">🔗</a></li>
+                        <li class="text-xl mt-1">Data Visualization <a href="https://www.freecodecamp.org/certification/tirthpatel14/data-visualization">🔗</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+
+    <section id="projects" class="bg-mainBlue text-center py-8 md:py-24 md:pb-16 px-8">
+        <h2 class="text-[40px] font-semibold text-center max-w-[640px] mx-auto mb-12 border-b-2 border-mainWhite">These are some of my projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:gap-10 max-w-7xl mx-auto">
+            <div>
+                <a href="https://github.com/tirthp14/Pramukh-Pharmaceutical" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/Pharmaceutical Website Image.png"/>
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>Pharmaceutical Website<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tirthp14/choropleth-map-data-visualization" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/Choropleth Map Image.png"/>
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>Choropleth Map<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tirthp14/pomodoro-timer" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/Pomodoro Timer Image.png" />
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>Pomodoro Timer<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tirthp14/heat-map-data-visualization" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/Heat Map Image.png" />
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>Heat Map<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tirthp14/drum-machine" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/Drum Machine Image.png" />
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>Drum Set Machine<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/tirthp14/javascript-calculator" target="_blank" class="group overflow-hidden">
+                    <div class="h-calc group overflow-hidden rounded-t-xl">
+                        <img class="h-full w-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500 ease-in-out overflow-hidden" src="/img/Project Images/JavaScript Calculator Image.png" />
+                    </div>
+                    <p class="text-[1.25rem] py-6 px-2 bg-mainGray rounded-b-xl"><span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in">&lt; </span>JavaScript Calculator<span class="text-mainGray group-hover:text-hoverColor font-semibold transition duration-300 ease-in"> &#47;&gt;</span></p>
+                </a>
+            </div>
+        </div>
+        <a href="https://github.com/tirthp14?tab=repositories" class="inline-block py-4 px-8 rounded-md text-xl bg-mainGray transition duration-300 ease-out hover:bg-mainRed my-5 md:mt-8 group" target="_blank">Show all<i class="fas fa-chevron-right group-hover:translate-x-1 ml-2.5 translate-x-0 transition duration-300 ease-out"></i></a>
+    </section>
+    
+      <!-- Contact Section -->
+      
+    <section id="contact" class="flex flex-col justify-center items-center md:h-[80vh] py-14 pb-8 md:pb-0 md:py-0 px-8 bg-mainGray">
+        <div>
+            <h2 class="text-6xl font-h1Font font-bold text-center">Let's work together...</h2>
+            <p class="italic text-center text-xl font-extralight mt-4">How do you take your coffee?</p>
+        </div>
+        <div class="flex justify-center w-full max-w-[980px] mt-6 md:mt-10 flex-wrap">
+            <a href="tel:437-967-5315" class="btn p-5 text-2xl hover:-translate-y-2 transition duration-300 ease-out"><i class="fas fa-mobile-alt"></i> Call me</a>
+            <a href="mailto:tirth.patel1721@gmail.com" class="btn p-5 text-2xl hover:-translate-y-2 transition duration-300 ease-out"><i class="fas fa-at"></i> Email Me</a>
+            <a id="profile-link" href="https://github.com/tirthp14" target="_blank" class="btn p-5 text-2xl hover:-translate-y-2 transition duration-300 ease-out"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="font-light flex justify-evenly p-4 bg-mainGray border-t-4 border-mainRed border-solid text-lg">
+        <p class="m-4 font-mono text-center">
+            &copy; Created with <span class="animate-pulse">❤</span> by
+            <a href="https://github.com/tirthp14" target="_blank">Tirth Patel <span class="font-semibold">¯\_(ツ)_/¯</span></a>
+        </p>
+    </footer>
+
+    <script src="/dist/javascript.js"></script>
+</body>
+</html>
