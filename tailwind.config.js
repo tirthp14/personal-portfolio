@@ -19,6 +19,9 @@ module.exports = {
       height: {
         calc: 'calc(100% - 6.8rem)',
       },
+      backgroundImage: {
+        'hero-pattern':  "url('img/Shiny Overlay.svg')",
+      },
       animation: {
         html: 'html 3s',
         javascript: 'javascript 3s',
